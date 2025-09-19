@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Fitness Assistant — Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--white:#ffffff}
+    *{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:linear-gradient(180deg,#071024 0%, #071a2c 100%);color:var(--white);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .wrap{max-width:920px;width:100%;background:rgba(255,255,255,0.03);border-radius:14px;padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:800}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    .controls{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:linear-gradient(90deg,var(--accent),#7c3aed);border:none;padding:10px 16px;border-radius:10px;color:#042029;font-weight:700;cursor:pointer;text-decoration:none}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+    .media{margin-top:18px;border-radius:10px;overflow:hidden;background:rgba(0,0,0,0.25);padding:12px}
+    img.sshot{max-width:100%;height:auto;border-radius:8px;display:block}
+    .info{margin-top:14px;color:var(--muted);font-size:14px}
+    footer{margin-top:20px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">AI</div>
+      <div>
+        <h1>AI Fitness Assistant — Trợ lý Thể thao & Sức khỏe</h1>
+        <p class="lead">Demo: chatbot trợ lý chuyên về bài tập & dinh dưỡng. Click "Mở trợ lý" để dùng bản custom GPT.</p>
+      </div>
+    </header>
+
+    <div class="controls" style="margin-top:16px">
+      <!-- Thay YOUR_CUSTOM_GPT_LINK bằng link thực -->
+      <a class="btn" href="YOUR_CUSTOM_GPT_LINK" target="_blank" rel="noopener noreferrer">Mở trợ lý (Custom GPT)</a>
+      <a class="btn secondary" href="demo.mp4" target="_blank">Xem video demo</a>
+      <a class="btn secondary" href="README.md" target="_blank">Xem repo / Báo cáo</a>
+    </div>
+
+    <div class="media">
+      <img class="sshot" src="demo.png" alt="Screenshot demo" />
+      <div class="info">Ảnh trên là màn hình demo. Nếu link Custom GPT không hiển thị trong trang (một số trang chặn iframe), bấm "Mở trợ lý" để mở trong tab mới.</div>
+    </div>
+
+    <footer>Made by Team DhTdttK19Qltdtt3 — Chuẩn bị cho Cuộc thi “Thử thách sáng tạo AI” • Hướng dẫn & Repo có trong README.</footer>
+  </div>
+</body>
+</html>
